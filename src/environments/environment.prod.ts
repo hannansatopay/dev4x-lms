@@ -1,11 +1,11 @@
 export const environment = {
   production: true,
   firebase: {
-    apiKey: "Your Api Key",
-    authDomain: "Your Auth Domain",
-    databaseURL: "Your Database Url",
-    projectId: "Your Project Id",
-    storageBucket: "Your StorageBucket url",
-    messagingSenderId: "Your Sender Id"
+    apiKey: "AIzaSyCJi0cQ866lzPR8hYJUs77JUmD4DBpswl8",
+    authDomain: "angular-deomo.firebaseapp.com",
+    databaseURL: "https://angular-deomo.firebaseio.com",
+    projectId: "angular-deomo",
+    storageBucket: "angular-deomo.appspot.com",
+    messagingSenderId: "175907956497"
   }
 };

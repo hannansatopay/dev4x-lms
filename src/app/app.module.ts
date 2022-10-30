@@ -10,6 +10,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
 
+import { SwiperModule } from 'swiper/angular';
+
 // for HttpClient import:
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 // for Router import:
@@ -28,7 +30,7 @@ import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 import { AppComponent } from './app.component';
-import { LoginComponent } from './auth/login/login.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -38,7 +40,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +67,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     // for Router use:
     LoadingBarRouterModule,
     // for Core use:
-    LoadingBarModule
+    LoadingBarModule,
+    SwiperModule
   ],
   providers: [AuthService, AdminGuard, SecureInnerPagesGuard, CookieService],
   bootstrap: [AppComponent]

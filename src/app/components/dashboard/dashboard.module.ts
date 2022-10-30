@@ -13,10 +13,10 @@ import { AgmCoreModule } from '@agm/core';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 
 import { DefaultComponent } from './default/default.component';
-import { EcommerceComponent } from './ecommerce/ecommerce.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
-  declarations: [DefaultComponent, EcommerceComponent],
+  declarations: [DefaultComponent],
   imports: [
     CommonModule,
     ChartistModule,
@@ -31,7 +31,8 @@ import { EcommerceComponent } from './ecommerce/ecommerce.component';
     AgmCoreModule.forRoot({
       apiKey: ''
     }),
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    SwiperModule
   ]
 })
 export class DashboardModule { }

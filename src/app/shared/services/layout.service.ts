@@ -7,14 +7,14 @@ export class LayoutService {
 
   public config = {
     settings: {
-      layout: 'Dubai',
-      layout_type: 'ltr',
-      layout_version: 'light-only',
-      sidebar_type: 'default-sidebar'
+       layout: 'Barcelona',
+       layout_type: 'ltr',
+       layout_version: 'dark-only',
+       sidebar_type: 'default-sidebar',
     },
     color: {
-      primary_color: '#7366ff', 
-      secondary_color: '#f73164'
+       primary_color: '#7366ff',
+       secondary_color: '#f73164'
     }
   }
 
